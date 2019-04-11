@@ -1,5 +1,5 @@
 from models.toy import Toy
-from models.size import Size
+from enums.size import Size
 
 
 class Ball(Toy):

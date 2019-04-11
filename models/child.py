@@ -1,4 +1,4 @@
-from models.age_group import AgeGroup
+from enums.age_group import AgeGroup
 
 
 class Child:

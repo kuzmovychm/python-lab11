@@ -1,12 +1,12 @@
 from managers.game_room_manager import GameRoomManager
 from models.game_room import GameRoom
-from models.size import Size
+from enums.size import Size
 from models.ball import Ball
 from models.car import Car
 from models.doll import Doll
 from models.figures import Figures
 from models.child import Child
-from models.age_group import AgeGroup
+from enums.age_group import AgeGroup
 
 
 manager = GameRoomManager()
@@ -35,6 +35,7 @@ manager.sort_toys_by_price(game_room, True)
 print("\ttoys sorted by price by ascending:")
 for toy in toys:
     print(str(toys.index(toy) + 1) + ". " + str(toy))
+print("\n")
 
 manager.sort_toys_by_price(game_room, False)
 print("\ttoys sorted by price by descending:")

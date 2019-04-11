@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from models.size import Size
+from enums.size import Size
 
 
 class Toy(ABC):
