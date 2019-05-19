@@ -85,7 +85,3 @@ print("\n")
 print("present children in game room:")
 for child in game_room.children:
     print(str(game_room.children.index(child) + 1) + ". " + str(child))
-
-
-
-
