@@ -1,8 +1,13 @@
 from abc import ABC, abstractmethod
 from enums.size import Size
+from app import db
 
 
-class Toy(ABC):
+class Toy(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    price = db.Column(db.Integer)
+    size = db.Column(db.String)
+    toy_type = db.Column(db.String)
 
     def __init__(self, price=0, size=Size, toy_type=None):
 
